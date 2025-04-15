@@ -83,7 +83,7 @@ export function AppLayout({ children }: AppLayoutProps) {
             </SidebarContent>
             <SidebarFooter>
               <div className="p-2 text-xs text-muted-foreground">
-                &copy; {new Date().getFullYear()} Your App
+                &copy; {new Date().getFullYear()} My Awesome Fusion App
               </div>
             </SidebarFooter>
           </Sidebar>
