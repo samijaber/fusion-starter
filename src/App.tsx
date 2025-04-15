@@ -56,7 +56,8 @@ const App = () => (
             <FooterContent>
               <FooterSection>
                 <FooterCopyright>
-                  © {new Date().getFullYear()} My App. All rights reserved.
+                  © Copyright {new Date().getFullYear()} My App. All rights
+                  reserved.
                 </FooterCopyright>
               </FooterSection>
               <FooterSection>
