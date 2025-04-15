@@ -41,8 +41,11 @@ const Header = () => {
                               Getting Started
                             </div>
                             <p className="text-sm leading-tight text-muted-foreground">
-                              Learn how to get started with our platform and
-                              explore its features.
+                              Learn how to get started with our platform through
+                              step-by-step tutorials, comprehensive setup
+                              guides, and configuration walkthroughs. Discover
+                              core features and best practices to maximize your
+                              productivity from day one.
                             </p>
                           </a>
                         </NavigationMenuLink>
