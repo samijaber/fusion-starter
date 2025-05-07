@@ -31,7 +31,7 @@ const Index = () => {
           </svg>
           Sami Jaber
         </h1>
-        <p className="mt-2 text-lg text-slate-600">2 + 34</p>
+        <p className="mt-2 text-lg text-slate-600">2 + 34 + 1</p>
       </div>
     </div>
   );
