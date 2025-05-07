@@ -29,7 +29,7 @@ const Index = () => {
               strokeDashoffset="75"
             />
           </svg>
-          Sami here
+          Sami Jaber
         </h1>
       </div>
     </div>
