@@ -4,6 +4,7 @@ const Index = () => {
       <div className="text-center p-10 bg-white rounded-xl shadow-sm">
         <h1 className="text-5xl font-bold text-slate-800">Hello World</h1>
         <p className="text-2xl mt-4 text-slate-600">Sami jAber</p>
+        <p className="text-xl mt-2 text-slate-500">2025</p>
       </div>
     </div>
   );
