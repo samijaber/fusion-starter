@@ -7,13 +7,22 @@ const Index = () => {
 
   const calculateWinner = (squares) => {
     const lines = [
-      [0, 1, 2], [3, 4, 5], [6, 7, 8], // Rows
-      [0, 3, 6], [1, 4, 7], [2, 5, 8], // Columns
-      [0, 4, 8], [2, 4, 6] // Diagonals
+      [0, 1, 2],
+      [3, 4, 5],
+      [6, 7, 8], // Rows
+      [0, 3, 6],
+      [1, 4, 7],
+      [2, 5, 8], // Columns
+      [0, 4, 8],
+      [2, 4, 6], // Diagonals
     ];
 
     for (const [a, b, c] of lines) {
-      if (squares[a] && squares[a] === squares[b] && squares[a] === squares[c]) {
+      if (
+        squares[a] &&
+        squares[a] === squares[b] &&
+        squares[a] === squares[c]
+      ) {
         return squares[a];
       }
     }
@@ -35,18 +44,20 @@ const Index = () => {
   };
 
   const winner = calculateWinner(board);
-  const isDraw = !winner && board.every(square => square !== null);
-  const status = winner 
-    ? `Winner: ${winner}` 
-    : isDraw 
-    ? "Game Draw!" 
-    : `Next player: ${xIsNext ? "X" : "O"}`;
+  const isDraw = !winner && board.every((square) => square !== null);
+  const status = winner
+    ? `Winner: ${winner}`
+    : isDraw
+      ? "Game Draw!"
+      : `Next player: ${xIsNext ? "X" : "O"}`;
 
   return (
     <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-slate-100 to-slate-200">
       <div className="p-8 bg-white rounded-xl shadow-lg">
-        <h1 className="text-3xl font-bold text-slate-800 mb-6 text-center">Tic Tac Toe</h1>
-        
+        <h1 className="text-3xl font-bold text-blue-600 mb-6 text-center">
+          Tic Tac Toe
+        </h1>
+
         <div className="mb-4 text-lg font-medium text-center text-slate-700">
           {status}
         </div>
@@ -64,10 +75,7 @@ const Index = () => {
           ))}
         </div>
 
-        <Button 
-          className="w-full"
-          onClick={resetGame}
-        >
+        <Button className="w-full" onClick={resetGame}>
           Reset Game
         </Button>
       </div>
